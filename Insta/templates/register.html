@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register form</h1>
+   
+    <form method="post">
+      {% csrf_token %}
+    <label for="name">name:</label><br>
+    <input type="text" id="name" name="name" ><br>
+    <label for="reg">reg:</label><br>
+    <input type="number" id="reg" name="reg" ><br>
+    <label for="college">college:</label><br>
+    <input type="text" id="college" name="college" ><br>
+    <label for="sub1">sub1:</label><br>
+    <input type="number" id="sub1" name="sub1" ><br>
+    <label for="sub2">sub2:</label><br>
+    <input type="number" id="sub2" name="sub2" ><br>
+    <label for="sub3">sub3:</label><br>
+    <input type="number" id="sub3" name="sub3" ><br>
+    <label for="sub4">sub4:</label><br>
+    <input type="number" id="sub4" name="sub4" ><br>
+    <button>
+      submit
+    </button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update</h1>
+   
+    <form action="/update_all/{{data.id}}/" method="POST"></form>
+      {% csrf_token %}
+    <label for="name">name:</label><br>
+    <input type="text" id="name" name="name" value="{{data.name}}"><br>
+    <label for="reg">reg:</label><br>
+    <input type="number" id="reg" name="reg" value="{{data.reg}}" ><br>
+    <label for="college">college:</label><br>
+    <input type="text" id="college" name="college" value="{{data.college}}"><br>
+    <label for="sub1">sub1:</label><br>
+    <input type="number" id="sub1" name="sub1" value="{{data.sub1}}"><br>
+    <label for="sub2">sub2:</label><br>
+    <input type="number" id="sub2" name="sub2" value="{{data.sub2}}"><br>
+    <label for="sub3">sub3:</label><br>
+    <input type="number" id="sub3" name="sub3" value="{{data.sub3}}"><br>
+    <label for="sub4">sub4:</label><br>
+    <input type="number" id="sub4" name="sub4" value="{{data.sub4}}"><br>
+    <button>update</button>
+</body>
+</html>
